@@ -14,7 +14,10 @@ void main()
 	a=1+rand();
 	b=1+rand();
 	u=1+rand() %180;
+	//u=90;
+	a=b;
 	printf ("a=%i, b=%i, u=%i \n", a, b, u);
+	
 	if (u==90)
 	{
 		if (a==b)

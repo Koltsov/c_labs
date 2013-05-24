@@ -11,7 +11,7 @@
 void main ()
 {
 	int i=1, j1=0, j2=0, Yvalues1[301], Yvalues2[301]; 
-	float X[301],Y[301],summator=0.2;
+	float X[301],Y[301],Y_min,Y_max,summator=0.2;
 	X[0]=0;
 	Y[0]=-1;
 	while (i<=300) //заполнение массива элементами
@@ -25,7 +25,6 @@ void main ()
 	
 	while (i<=300)
 	{
-		//printf("%f \n",Y[i]);
 		if (Y[i]<0)
 		{
 			Yvalues1[j1]=i; //заполнение массива индексов отрицательных чисел
@@ -35,7 +34,6 @@ void main ()
 		{
 			Yvalues2[j2]=i; //заполнение массива индексов положительных чисел
 			j2++;
-			printf("%f \n", Yvalues2[j2]);
 		}
 		
 		i++;
@@ -80,6 +78,17 @@ void main ()
 		printf("\n");
 		i++;
 	}
+	i=1;
+	Y_min=Y_max=Y[0];
+	while (i<=300) //нахождение минимального и максимального значений массива
+	{
+		if (Y[i]<Y_min)
+			Y_min=Y[i];
+		if (Y[i]>Y_max)
+			Y_max=Y[i];
+		i++;
+	}
+	printf("\n Y_min=%f, Y_max=%f", Y_min, Y_max);
 	getch();
 }
 

@@ -12,7 +12,7 @@ void main()
 	srand(time(NULL));
 	unsigned char symbol = 33 + rand() %255;
 	int symbolCode=symbol;
-	printf("Based on 866 - MS-DOS code table \n");
+	symbolCode=175;
 	printf("Symbol code is %i \n", symbolCode);
 	if ((symbolCode>=176 && symbolCode<=223)|| symbolCode==254)
 	{
@@ -22,7 +22,7 @@ void main()
 	{
 		printf("This is a capital russian character");
 	}
-	if ((symbolCode>=160 && symbolCode <=175)|| (symbolCode>=224 && symbolCode <=239) || symbolCode==241 || symbolCode==43)
+	if ((symbolCode>=160 && symbolCode <=175)|| (symbolCode>=224 && symbolCode <=239) || symbolCode==241 || symbolCode==243)
 	{
 		printf("This is a small russian character");
 	}

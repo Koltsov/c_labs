@@ -25,35 +25,55 @@ void main ()
 	
 	while (i<=300)
 	{
-		if (Y[i]>=0)
+		//printf("%f \n",Y[i]);
+		if (Y[i]<0)
 		{
-			Yvalues1[j1]=i; //заполнение массива индексов положительных чисел
+			Yvalues1[j1]=i; //заполнение массива индексов отрицательных чисел
 			j1++;
 		}
 		else
 		{
-			Yvalues2[j2]=i; //заполнение массива индексов отрицательныхчисел
+			Yvalues2[j2]=i; //заполнение массива индексов положительных чисел
 			j2++;
+			printf("%f \n", Yvalues2[j2]);
 		}
 		
 		i++;
 	}
-		printf(" col 1  col 2  col 3  col 4  col 5  col 6  col 7  col 8  col 9  col 10 \n");
+		printf(" col 1  col 2  col 3  col 4  col 5  col 6  col 7  col 8  col 9  col 10 \n"); //заголовки для колонок
 		i=0;
 	int index=0;// объявляем переменную индекса общую для обоих массивов. Как только индекс превысит размер первого массива начнется вывод второго
+	j1-=1; //так как счетчик считал кол-во элементов,а нам нужен индекс крайнего
+	j2-=1;
 	while (i<=30)
 	{
-		printf("_____________________________________________________________________\n\n");
+		
 		int j=0;
 		while (j<10)
 		{
 			if (index <= j1)
 			{
 				//оптимизация вывода чтобы табличка была ровной
-				if (index <10)
-					printf("    ");
+				if (Yvalues1[index] <10)
+					printf("   %i   ", Yvalues1[index]);
+				if (Yvalues1[index]>=10 && Yvalues1[index]<100)
+					printf("  %i   ", Yvalues1[index]);
+				if (Yvalues1[index]>=100)
+					printf(" %i   ", Yvalues1[index]);
 			}
-			printf(" hui 1 ");
+			else
+			{
+				int index2=index-j1-1; //-1 дабы получить снова нулевой индекс
+				if (Yvalues2[index2] <10)
+					printf("   %i   ", Yvalues2[index2]);
+				if (Yvalues2[index2]>=10 && Yvalues2[index2]<100)
+					printf("  %i   ", Yvalues2[index2]);
+				if (Yvalues2[index2]>=100)
+					printf(" %i   ", Yvalues2[index2]);
+			}
+
+			if (index==300) //останавливаемся когда вывели все эелементы
+				break;
 			j++;
 			index++;
 		}

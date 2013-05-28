@@ -1,0 +1,23 @@
+﻿Build started 5/27/2013 8:42:40 PM.
+     1>Project "C:\Users\sadgb\documents\visual studio 2012\Projects\lab1\lab4\lab4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\lab4.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt lab4.cpp
+         lab4.cpp
+     1>c:\users\sadgb\documents\visual studio 2012\projects\lab1\lab4\lab4.cpp(14): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(261) : see declaration of 'gets'
+     1>c:\users\sadgb\documents\visual studio 2012\projects\lab1\lab4\lab4.cpp(19): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : see declaration of 'scanf'
+     1>c:\users\sadgb\documents\visual studio 2012\projects\lab1\lab4\lab4.cpp(26): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : see declaration of 'scanf'
+     1>c:\users\sadgb\documents\visual studio 2012\projects\lab1\lab4\lab4.cpp(27): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(261) : see declaration of 'gets'
+     1>c:\users\sadgb\documents\visual studio 2012\projects\lab1\lab4\lab4.cpp(25): warning C4102: 'A' : unreferenced label
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sadgb\documents\visual studio 2012\Projects\lab1\Debug\lab4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\sadgb\documents\visual studio 2012\Projects\lab1\Debug\lab4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sadgb\documents\visual studio 2012\Projects\lab1\Debug\lab4.lib" /MACHINE:X86 Debug\lab4.obj
+         Debug\stdafx.obj
+         lab4.vcxproj -> C:\Users\sadgb\documents\visual studio 2012\Projects\lab1\Debug\lab4.exe
+     1>Done Building Project "C:\Users\sadgb\documents\visual studio 2012\Projects\lab1\lab4\lab4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.39

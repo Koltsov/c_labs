@@ -13,8 +13,7 @@ void main()
 	int a,b,u;
 	a=1+rand();
 	b=1+rand();
-	u=1+rand() %180;
-	//u=90;
+	u=1+rand()%179;
 	a=b;
 	printf ("a=%i, b=%i, u=%i \n", a, b, u);
 	

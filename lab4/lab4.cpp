@@ -10,28 +10,29 @@
 
 void main ()
 {
-	char s1[n], s2[n], zam, men, opana;
+	char s1[n], s2[n], zam, men, tmp;
+	printf("Type a string... \n");
 	gets(s1);
 	puts(s1);
 	int i, l=strlen(s1);
-	printf("l=%i",l);
-	printf("input zam and men:");
+	printf("l=%i \n",l);
+	printf("input new symbol and symbol that you want to change: \n");
 	scanf("%c %c",&zam,&men);
-	printf("zam=%c	men=%c",zam,men);
+	printf("\n new=%c	old=%c \n",zam,men);
 	for (i=0;i<l;i++)
 	{
 		if (s1[i]==men)
 		{
-			printf("Type 'yes' if you want to change the (%i) symbol: ",i);
-			scanf("%c",&opana);			
+			printf("\n Type 'yes' if you want to change the (%i) symbol or anything else if not: ",i);
+			scanf("%c",&tmp);			
 			gets(s2);
 			if (s2[0]='y' && s2[1]=='e' && s2[2]=='s')
 				s1[i]=zam;
 			else 
-				continue;
-			
+				continue;			
 		}
 	}
+	printf("The result is: \n");
 	puts(s1);
 	system("Pause");
 }
